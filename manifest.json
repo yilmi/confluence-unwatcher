@@ -1,0 +1,18 @@
+{
+    "name": "Confluence Notify watchers disabler",
+    "version": "1.0",
+    "description": "Automatically disables the 'Notify watchers' checkbox when editing a confluence pages",
+    "permissions": ["storage"],
+    "browser_action": {
+        "default_title": "Notify watchers status"
+    },
+    "content_scripts": [{
+        "matches": ["https://*/display/*","https://*/pages/editpage.action*"],
+        "js": ["content.js"]
+    }],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "manifest_version": 2
+}
+
