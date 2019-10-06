@@ -3,6 +3,12 @@
     "version": "1.0",
     "description": "Automatically disables the 'Notify watchers' checkbox when editing a confluence pages",
     "permissions": ["storage"],
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "{3fe7ab60-e7e5-11e9-941a-13c1bfa4e6f9}",
+          "strict_min_version": "42.0"
+        }
+    },
     "browser_action": {
         "default_title": "Notify watchers status"
     },
@@ -13,6 +19,6 @@
     "background": {
         "scripts": ["background.js"]
     },
-    "manifest_version": 2
+    "manifest_version": 4
 }
 
