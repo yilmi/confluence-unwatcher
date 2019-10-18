@@ -1,9 +1,10 @@
 // Function disabling notify watchers in the DOM
 function unWatch(){
     checkbox = document.getElementById("notifyWatchers");
-    checkbox.checked = true;
-    checkbox.click();
-    console.log("The 'Notify watchers' checkbox was set to false on this page");
+    if(checkbox.checked) {
+        checkbox.click();
+    }
+    console.log("The 'Notify watchers' checkbox was unset for this page");
 }
 
 // If we have a notifyWatchers element, let's disable it
